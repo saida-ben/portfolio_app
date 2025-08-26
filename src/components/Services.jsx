@@ -15,7 +15,7 @@ export default function Services() {
             marginBottom: '32px',
           }}
         >
-          technology Skills
+          Technology Skills
         </h2>
 
         <div
@@ -25,46 +25,68 @@ export default function Services() {
             gap: '32px',
           }}
         >
-          {/* Service Card Example */}
           <ServiceCard
-            icon="ri-layout-4-fill"
+            icon={<img src="./img/JEE.png" alt="JEE" width={80} height={80} />}
             title="Jakarta Enterprise Edition (JEE)"
             text="Framework Spring / Spring Boot, JPA, Hibernate, Administration Tomcat, 3-tier Architecture, MVC2 Model, Servlets and JSP, DAO Pattern"
             iconColor="#4299e1"
           />
 
           <ServiceCard
-            icon="ri-pen-nib-fill"
+            icon={<img src="./img/coding.png" alt="Web" width={60} height={60} />}
             title="Ingénierie du Web"
             text="HTML, CSS, JavaScript, Node.js, React"
             iconColor="#9f7aea"
+            logos={[
+              { src: "./img/nodejs.png", alt: "Power BI", width: 50, height: 50 },
+              { src: "./img/react.png", alt: "Talend", width: 50, height: 80 },
+              { src: "./img/js.png", alt: "Pentaho", width: 50, height: 50 },
+              { src: "./img/tml.png", alt: "Pentaho", width: 50, height: 50 },
+              { src: "./img/css.png", alt: "Pentaho", width: 50, height: 50 },
+            ]}
           />
 
           <ServiceCard
-            icon="ri-code-s-slash-line"
+            icon={<img src="./img/devops.png" alt="DevOps" width={80} height={80} />}
             title="Ingénierie DevOps"
             text="Maven, Git, GitHub, GitLab, Jira, Jenkins, JUnit, Selenium"
             iconColor="#48bb78"
+            logos={[
+              { src: "./img/git.png", alt: "Power BI", width: 50, height: 50 },
+              { src: "./img/github.png", alt: "Talend", width: 50, height:50 },
+              { src: "./img/maven.png", alt: "Pentaho", width: 50, height: 50 },
+              { src: "./img/junit.png", alt: "Pentaho", width: 50, height: 50 },
+            ]}
           />
 
           <ServiceCard
-            icon="ri-smartphone-line"
+            icon={<img src="./img/XML.png" alt="XML" width={80} height={80} />}
             title="Technologie XML"
             text="Standard XML, Bases de données XML, Parseurs XML (DOM, SAX), DTD, XSD (XML Schema), XSLT, XPath, XQuery"
             iconColor="#319795"
           />
 
+          {/* BI avec logos */}
           <ServiceCard
-            icon="ri-share-fill"
-            title="BI "
-            text="Power BI, Talend, Pentaho."
+            icon={<img src="./img/bi.png" alt="BI" width={80} height={80} />}
+            title="BI"
+            logos={[
+              { src: "./img/powerbi.png", alt: "Power BI", width: 80, height: 80 },
+              { src: "./img/talend.png", alt: "Talend", width: 80, height: 80 },
+              { src: "./img/pentaho.png", alt: "Pentaho", width: 80, height: 80 },
+            ]}
             iconColor="#ecc94b"
           />
+
           <ServiceCard
-            icon="ri-share-fill"
+            icon={<img src="./img/db.png" alt="DB" width={80} height={80} />}
             title="DB | Data Formats"
             text="MySQL, PostgreSQL | JSON, XML."
             iconColor="#ecc94b"
+            logos={[
+              { src: "./img/mysql.png", alt: "Power BI", width: 70, height: 70 },
+              { src: "./img/posql.png", alt: "Talend", width: 70, height: 70 },
+            ]}
           />
         </div>
       </div>
@@ -72,8 +94,8 @@ export default function Services() {
   );
 }
 
-// Petite fonction pour éviter la répétition
-function ServiceCard({ icon, title, text, iconColor }) {
+// ServiceCard corrigé
+function ServiceCard({ icon, title, text, iconColor, logos = [] }) {
   return (
     <div
       style={{
@@ -85,8 +107,13 @@ function ServiceCard({ icon, title, text, iconColor }) {
       }}
     >
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '16px' }}>
-        <i className={icon} style={{ fontSize: '40px', color: iconColor }}></i>
+        {typeof icon === "string" ? (
+          <i className={icon} style={{ fontSize: '60px', color: iconColor }}></i>
+        ) : (
+          icon
+        )}
       </div>
+
       <h3
         style={{
           fontSize: '20px',
@@ -98,7 +125,33 @@ function ServiceCard({ icon, title, text, iconColor }) {
       >
         {title}
       </h3>
-      <p style={{ color: 'black', textAlign: 'center' }}>{text}</p>
+
+      {/* Afficher soit les logos, soit le texte */}
+      {logos.length > 0 ? (
+        <div
+          style={{
+            display: 'flex',
+            gap: '12px',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            marginTop: '4px',
+          }}
+        >
+          {logos.map((lg, i) => (
+            <img
+              key={i}
+              src={lg.src}
+              alt={lg.alt}
+              width={lg.width || 40}
+              height={lg.height || 40}
+              style={{ objectFit: 'contain', display: 'block' }}
+            />
+          ))}
+        </div>
+      ) : (
+        <p style={{ color: 'black', textAlign: 'center' }}>{text}</p>
+      )}
     </div>
   );
 }

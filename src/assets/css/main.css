@@ -803,5 +803,10 @@
       color: var(--color-icon);
     }
 
-    
+    .project__techs {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
   }
