@@ -62,7 +62,7 @@ export default function Projects() {
               link: 'https://github.com/saida-ben/-recruitmentPlatform',
               title: 'Recruitement platform',
               desc: 'Development of a Recruitment Management Platform.',
-              github: 'https://github.com/saida-ben/-recruitmentPlatform',
+              github: 'https://github.com/saida-ben/recruitment-platform',
               techs: ['nodeJs', 'react', 'mysql', 'git', 'github'],
 
             },
@@ -71,7 +71,7 @@ export default function Projects() {
               link: 'https://github.com/saida-ben/Feedback_analyzer_project',
               title: 'Feedback analyzer project',
               desc: 'Feedback analyzer project',
-              github: 'https://github.com/saida-ben/Feedback_analyzer_project',
+              github: 'https://github.com/saida-ben/Feedback_analyzer',
               techs: ['springBoot', 'react','mysql', 'git', 'github'],
 
             },

@@ -33,16 +33,16 @@ export default function Services() {
           />
 
           <ServiceCard
-            icon={<img src="./img/coding.png" alt="Web" width={60} height={60} />}
+            icon={<img src="./img/coding.png" alt="Web" width={80} height={80} />}
             title="Ingénierie du Web"
             text="HTML, CSS, JavaScript, Node.js, React"
             iconColor="#9f7aea"
             logos={[
-              { src: "./img/nodejs.png", alt: "Power BI", width: 50, height: 50 },
-              { src: "./img/react.png", alt: "Talend", width: 50, height: 80 },
-              { src: "./img/js.png", alt: "Pentaho", width: 50, height: 50 },
-              { src: "./img/tml.png", alt: "Pentaho", width: 50, height: 50 },
-              { src: "./img/css.png", alt: "Pentaho", width: 50, height: 50 },
+              { src: "./img/nodejs.png", alt: "Power BI", width: 40, height: 40 },
+              { src: "./img/react.png", alt: "Talend", width: 40, height: 40 },
+              { src: "./img/js.png", alt: "Pentaho", width: 40, height: 40 },
+              { src: "./img/tml.png", alt: "Pentaho", width: 40, height: 40 },
+              { src: "./img/css.png", alt: "Pentaho", width: 40, height: 40 },
             ]}
           />
 
@@ -52,10 +52,10 @@ export default function Services() {
             text="Maven, Git, GitHub, GitLab, Jira, Jenkins, JUnit, Selenium"
             iconColor="#48bb78"
             logos={[
-              { src: "./img/git.png", alt: "Power BI", width: 50, height: 50 },
-              { src: "./img/github.png", alt: "Talend", width: 50, height:50 },
-              { src: "./img/maven.png", alt: "Pentaho", width: 50, height: 50 },
-              { src: "./img/junit.png", alt: "Pentaho", width: 50, height: 50 },
+              { src: "./img/git.png", alt: "Power BI", width: 40, height: 40 },
+              { src: "./img/github.png", alt: "Talend", width: 40, height:40 },
+              { src: "./img/maven.png", alt: "Pentaho", width: 40, height: 40 },
+              { src: "./img/junit.png", alt: "Pentaho", width: 40, height: 40 },
             ]}
           />
 
@@ -119,7 +119,7 @@ function ServiceCard({ icon, title, text, iconColor, logos = [] }) {
           fontSize: '20px',
           fontWeight: 600,
           textAlign: 'center',
-          marginBottom: '8px',
+          marginBottom: '12px',
           color: 'black',
         }}
       >
@@ -135,7 +135,7 @@ function ServiceCard({ icon, title, text, iconColor, logos = [] }) {
             justifyContent: 'center',
             alignItems: 'center',
             flexWrap: 'wrap',
-            marginTop: '4px',
+            marginTop: '12px',
           }}
         >
           {logos.map((lg, i) => (

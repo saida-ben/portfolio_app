@@ -262,7 +262,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: var(--color-bg-primary);
+      background-color: var(--color-bg-header);
       display: none;
       justify-content: center;
       transition: var(--transition);
@@ -270,6 +270,7 @@
   
     .nav__menu--open {
       display: flex;
+
     }
   
     .nav__toggle {
@@ -608,6 +609,8 @@
   
   .contact__description {
     margin-bottom: 2rem;
+    color: var(--color-primary);
+
   }
   
   /* Footer
@@ -714,6 +717,15 @@
     .footer__wrapper {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .date__icon {
+      font-size: 1.4rem; /* Ajustez la taille selon vos besoins */
+    }
+
+    .date__icon {
+      font-size: 1.4rem; /* Ajustez la taille selon vos besoins */
+    }
+
   }
   
   @media screen and (min-width: 768px) {
@@ -737,6 +749,14 @@
   
     .hero__img {
       justify-self: flex-end;
+    }
+
+    .date__icon {
+      font-size: 1.6rem; /* Ajustez la taille selon vos besoins */
+    }
+
+    .date__icon {
+      font-size: 1.6rem; /* Ajustez la taille selon vos besoins */
     }
   }
   
@@ -779,10 +799,6 @@
 
     .nav__icon {
       font-size: 2rem; /* Ajustez la taille selon vos besoins */
-      vertical-align: middle;
-      margin-right: 0.5em;
-      color: var(--color-icon);
-
     }
 
     .qualification__header {
@@ -798,9 +814,6 @@
 
     .date__icon {
       font-size: 1.8rem; /* Ajustez la taille selon vos besoins */
-      vertical-align: middle;
-      margin-right: 0.5em;
-      color: var(--color-icon);
     }
 
     .project__techs {
@@ -810,3 +823,96 @@
       margin-bottom: 15px;
     }
   }
+
+  .nav__icon {
+      vertical-align: middle;
+      margin-right: 0.5em;
+      color: var(--color-icon);
+  }
+  .date__icon {
+      vertical-align: middle;
+      margin-right: 0.5em;
+      color: var(--color-icon);
+  }
+
+    /* Centrer le formulaire */
+.contact-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form-container {
+  background: #3e3e3e;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.dot.red { background: #ed1c6f; }
+.dot.yellow { background: #e8e925; }
+.dot.green { background: #74c54f; }
+
+.contact-form-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #32a852;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #555;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
