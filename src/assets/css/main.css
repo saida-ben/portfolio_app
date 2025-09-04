@@ -215,6 +215,7 @@
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
+    margin-right: auto; /* pousse le bouton à l'extrême droite */
   }
   
   .nav__brand i {
@@ -248,6 +249,7 @@
     color: var(--color-primary);
   }
   
+
   @media screen and (max-width: 968px) {
     .nav__list {
       flex-direction: column;
@@ -255,7 +257,8 @@
       align-items: center;
       row-gap: 4rem;
     }
-  
+
+
     .nav__menu {
       position: fixed;
       top: 0;
@@ -287,7 +290,7 @@
   --------------------------------------------------------------*/
   .hero__wrapper {
     min-height: calc(100vh - var(--height-header));
-    padding: 5rem 0;
+    padding: 2.5rem 0;
   }
   
   .hero__content {
@@ -295,7 +298,7 @@
   }
   
   .hero__title {
-    font-size: var(--fs-biggest);
+    font-size: var(--fs-xxl);
     margin-bottom: 5rem;
     position: relative;
     color: var(--color-bg-secondary);
@@ -313,7 +316,7 @@
   }
   
   .hero__description {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     color: var(--color-primary);
 
   }
@@ -452,9 +455,8 @@
   .qualification__footer {
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
-    margin-top: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     text-align: center;
   }
   
@@ -916,3 +918,45 @@
 }
 
 
+.nav__right {
+  position: relative;
+  margin-left: auto; /* pousse le bouton à l'extrême droite */
+  margin-right: 1rem; /* espace entre le bouton et le bord droit */
+}
+
+.lang-btn {
+  background-color: var(--color-bg-header);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: var(--fw-semibold);
+}
+
+
+
+.lang-menu {
+  position: absolute;
+  top: 110%; /* juste en dessous du bouton */
+  right: 0;
+  background-color: var(--color-bg-header);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  z-index: 1200;
+}
+
+.lang-menu li {
+  cursor: pointer;
+  padding: 0.3rem;    /* espace cliquable */
+  display: flex;
+  justify-content: center; /* centre le drapeau */
+}
+
+.lang-menu li:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

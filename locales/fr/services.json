@@ -1,0 +1,26 @@
+{
+  "title": "Compétences Technologiques",
+  "jee": {
+    "title": "Jakarta Enterprise Edition (JEE)",
+    "text": "Framework Spring / Spring Boot, JPA, Hibernate, Administration Tomcat, Architecture 3-tiers, Modèle MVC2, Servlets et JSP, Patron DAO"
+  },
+  "web": {
+    "title": "Ingénierie du Web",
+    "text": "HTML, CSS, JavaScript, Node.js, React"
+  },
+  "devops": {
+    "title": "Ingénierie DevOps",
+    "text": "Maven, Git, GitHub, GitLab, Jira, Jenkins, JUnit, Selenium"
+  },
+  "xml": {
+    "title": "Technologie XML",
+    "text": "Standard XML, Bases de données XML, Parseurs XML (DOM, SAX), DTD, XSD (Schéma XML), XSLT, XPath, XQuery"
+  },
+  "bi": {
+    "title": "Business Intelligence"
+  },
+  "db": {
+    "title": "Bases de données | Formats de données",
+    "text": "MySQL, PostgreSQL | JSON, XML."
+  }
+}

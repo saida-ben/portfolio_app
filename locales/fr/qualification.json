@@ -1,0 +1,33 @@
+{
+  "title": "Qualification",
+  "subtitle": "Expérience & Formation",
+  "experience": "Expérience Professionnelle",
+  "education": "Éducation",
+
+  "exp1_title": "Stagiaire Développeuse Fullstack",
+  "exp1_company": "Lume Agency, France",
+  "exp1_desc": "Développement d'une application web pour digitaliser le processus de recrutement, permettant aux recruteurs de publier des offres et de gérer les candidatures, tandis que les candidats peuvent postuler directement.",
+  "exp1_date": "Avril 2024 - Juin 2024",
+
+  "exp2_title": "Stagiaire Développeuse Fullstack",
+  "exp2_company": "OCP - Safi",
+  "exp2_desc": "Développement d'une application web pour la visualisation en temps réel des données météorologiques afin d'ajuster la production.",
+  "exp2_date": "Avril 2023 - Juin 2023",
+
+  "exp3_title": "Stagiaire Développeuse Fullstack",
+  "exp3_company": "Marjane Holding - Safi",
+  "exp3_desc": "Développement d'une application web pour la gestion des commandes clients et du stock, améliorant l'efficacité opérationnelle et la satisfaction client.",
+  "exp3_date": "Juillet 2022 - Août 2022",
+
+  "edu1_title": "DUT en Génie Informatique",
+  "edu1_school": "EST - Université Cadi Ayyad - Safi",
+  "edu1_date": "2021 - 2023",
+
+  "edu2_title": "Licence Professionnelle en ISIR",
+  "edu2_school": "EST - Université Cadi Ayyad - Safi",
+  "edu2_date": "2023 - 2024",
+
+  "edu3_title": "Master en Qualité Logicielle",
+  "edu3_school": "FSDM - Fès",
+  "edu3_date": "Prévu en 2026"
+}

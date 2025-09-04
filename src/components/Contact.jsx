@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
   const form = useRef();
+  const { t, i18n } = useTranslation('contact');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -15,11 +17,11 @@ export default function Contact() {
         "QtcFYRl0J890VXALY"
       )
       .then((result) => {
-        alert(`Merci ${form.current.from_name.value} ! Votre message a été envoyé.`);
+        alert(t("contact.alerts.success", { name: form.current.from_name.value }));
         e.target.reset();
     },
       (error) => {
-          alert("Une erreur est survenue. Veuillez réessayer.");
+          alert(t("contact.alerts.error"));
           console.log(error.text);
         }
       );
@@ -31,13 +33,10 @@ export default function Contact() {
         <div className="d-grid contact__wrapper">
           <div className="contact__content">
             <h2 className="contact__title">
-              Interested in working together? Let's talk
+              {t("contact.title")}
             </h2>
             <p className="contact__description">
-              Ready to work together on your next software project? I'd love to
-              hear from you! Feel free to get in touch using the contact
-              information below. I’ll respond as quickly as possible and look
-              forward to connecting soon.
+              {t("contact.description")}
             </p>
           </div>
 
@@ -52,7 +51,7 @@ export default function Contact() {
                 textAlign: "center",
               }}
             >
-              Get in touch <i className="fa-solid fa-handshake"></i>
+              {t("contact.btn")} <i className="fa-solid fa-handshake"></i>
             </a>
           </div>
         </div>
@@ -129,38 +128,39 @@ export default function Contact() {
                 }}
               >
                 <div style={{ flex: 1, padding: "20px" }}>
-                  <h3 style={{ fontSize: "26px", marginBottom: "20px", color: "#208c61"}}>CONTACT ME</h3>
+                  <h3 style={{ fontSize: "26px", marginBottom: "20px", color: "#208c61"}}>{t("contact.form.title")}</h3>
 
                   <form ref={form} onSubmit={sendEmail} className="contact-form">
                     <div className="form-group">
-                      <label className="block font-semibold">Nom</label>
+                      <label className="block font-semibold">{t("contact.form.name")}</label>
                       <input
                         type="text"
                         name="from_name"
                         required
-className="form-input"                       />
+                        className="form-input"/>
                     </div>
                     <div className="form-group"> 
-                      <label className="block font-semibold">Email</label>
+                      <label className="block font-semibold">{t("contact.form.email")}</label>
                       <input
                         type="email"
                         name="from_email"
                         required
-className="form-input"                       />
+                        className="form-input"/>
                     </div>
                     <div className="form-group">
-                      <label className="block font-semibold">Message</label>
+                      <label className="block font-semibold">{t("contact.form.message")}</label>
                       <textarea
                         name="message"
                         required
                         rows="4"
-className="form-textarea"                      ></textarea>
+                        className="form-textarea">
+                      </textarea>
                     </div>
                     <button
                       type="submit"
-                    className="btn btn--primary mt-4 submit-btn"
+                      className="btn btn--primary mt-4 submit-btn"
                     >
-                      Envoyer
+                      {t("contact.form.submit")}
                     </button>
                   </form>
 

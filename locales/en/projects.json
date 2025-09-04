@@ -1,0 +1,34 @@
+{
+  "projects": {
+    "title": "Projects",
+    "subtitle": "My recent work",
+    "list": {
+      "badsmell": {
+        "title": "Bad Smell Hunter",
+        "desc": "Detection of Bad Smells and Refactoring in Java Code."
+      },
+      "recruitment": {
+        "title": "Recruitment Platform",
+        "desc": "Development of a Recruitment Management Platform."
+      },
+      "feedback": {
+        "title": "Feedback Analyzer Project",
+        "desc": "Feedback analyzer project."
+      },
+      "covid": {
+        "title": "COVID-19 Dashboard",
+        "desc": "COVID-19 Epidemiological Monitoring via Dashboard."
+      },
+      "children": {
+        "title": "Children Management",
+        "desc": "Web Application for Children Management, Daily Journals, Roles and Users."
+      },
+      "weather": {
+        "title": "Real-Time Visualization of Weather",
+        "desc": "Real-Time Visualization of Weather Data for Production Adjustment."
+      }
+    },
+    "viewProject": "View Project",
+    "viewMore": "View More Projects"
+  }
+}

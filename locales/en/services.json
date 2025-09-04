@@ -1,0 +1,26 @@
+{
+  "title": "Technology Skills",
+  "jee": {
+    "title": "Jakarta Enterprise Edition (JEE)",
+    "text": "Spring / Spring Boot Framework, JPA, Hibernate, Tomcat Administration, 3-tier Architecture, MVC2 Model, Servlets and JSP, DAO Pattern"
+  },
+  "web": {
+    "title": "Web Engineering",
+    "text": "HTML, CSS, JavaScript, Node.js, React"
+  },
+  "devops": {
+    "title": "DevOps Engineering",
+    "text": "Maven, Git, GitHub, GitLab, Jira, Jenkins, JUnit, Selenium"
+  },
+  "xml": {
+    "title": "XML Technology",
+    "text": "XML Standard, XML Databases, XML Parsers (DOM, SAX), DTD, XSD (XML Schema), XSLT, XPath, XQuery"
+  },
+  "bi": {
+    "title": "Business Intelligence"
+  },
+  "db": {
+    "title": "Databases | Data Formats",
+    "text": "MySQL, PostgreSQL | JSON, XML."
+  }
+}

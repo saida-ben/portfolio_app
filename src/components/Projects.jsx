@@ -16,6 +16,7 @@ import { SiMysql } from "react-icons/si";
 import { TbFileTypeSql } from "react-icons/tb";
 import { SiSpringboot } from "react-icons/si";
 import { SiJunit5 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const techIcons = {
   react: <FaReact title="React" color="#61DBFB" size={24} />,
@@ -39,12 +40,14 @@ const techIcons = {
 
 
 export default function Projects() {
+    const { t } = useTranslation("projects");
+
   return (
     <section id="project" className="section project">
       <div className="container">
         <div className="section__header">
-          <h2 className="section__title">Projects</h2>
-          <span className="section__subtitle">My recent work</span>
+          <h2 className="section__title">{t("projects.title")}</h2>
+          <span className="section__subtitle">{t("projects.subtitle")}</span>
         </div>
 
         <div className="d-grid project__wrapper">
@@ -52,16 +55,16 @@ export default function Projects() {
             {
               img: './img/project3',
               link: 'https://github.com/saida-ben/BadSmellHunter',
-              title: 'Bad smell hunter',
-              desc: ' Detection of Bad Smells and Refactoring in Java Code.',
+              title: t("projects.list.badsmell.title"),
+              desc: t("projects.list.badsmell.desc"),
               github: 'https://github.com/saida-ben/BadSmellHunter',
               techs: ['java', 'testing', 'git', 'github'],
             },
             {
               img: './img/project2.png',
               link: 'https://github.com/saida-ben/-recruitmentPlatform',
-              title: 'Recruitement platform',
-              desc: 'Development of a Recruitment Management Platform.',
+              title: t("projects.list.recruitment.title"),
+              desc: t("projects.list.recruitment.desc"),
               github: 'https://github.com/saida-ben/recruitment-platform',
               techs: ['nodeJs', 'react', 'mysql', 'git', 'github'],
 
@@ -69,8 +72,8 @@ export default function Projects() {
             {
               img: './img/project3.png',
               link: 'https://github.com/saida-ben/Feedback_analyzer_project',
-              title: 'Feedback analyzer project',
-              desc: 'Feedback analyzer project',
+              title: t("projects.list.feedback.title"),
+              desc:  t("projects.list.feedback.desc"),
               github: 'https://github.com/saida-ben/Feedback_analyzer',
               techs: ['springBoot', 'react','mysql', 'git', 'github'],
 
@@ -78,24 +81,24 @@ export default function Projects() {
             {
               img: './img/project7.png',
               link: '',
-              title: 'COVID-19 Dashboard',
-              desc: 'COVID-19 Epidemiological Monitoring via Dashboard.',
+              title: t("projects.list.covid.title"),
+              desc: t("projects.list.covid.desc"),
               github: '',
               techs: ['powerbi', 'json','sql', 'xml', 'dax'],
 
             },
             {
               img: './img/projet_atfal.png',
-              link: '',
-              title: ' Children Management',
+              link: t("projects.list.children.title"),
+              title: t("projects.list.children.desc"),
               desc: ' Web Application for Children Management, Daily Journals, Roles and Users.',
               techs: ['Laravel', 'react','mysql', 'git', 'github'],
             },
             {
               img: './img/project_weather.png',
               link: '',
-              title: 'Real-Time Visualization of Weather ',
-              desc: 'Real-Time Visualization of Weather Data for Production Adjustment.',
+              title: t("projects.list.weather.title"),
+              desc: t("projects.list.weather.desc"),
               techs: ['js', 'html', 'CSS'],
             },
           ].map((project, index) => (
@@ -114,7 +117,7 @@ export default function Projects() {
               </div>
 
               <a href={project.github} className="project__link">
-                View Project <i className="ri-arrow-right-line"></i>
+                {t("projects.viewProject")} <i className="ri-arrow-right-line"></i>
               </a>
             </div>
           ))}
@@ -138,7 +141,7 @@ export default function Projects() {
               textAlign: 'center',
             }}
           >
-            View More Projects <i className="fa-solid fa-angle-down fa-bounce"></i>
+            {t("projects.viewMore")} <i className="fa-solid fa-angle-down fa-bounce"></i>
           </a>
         </div>
       </div>

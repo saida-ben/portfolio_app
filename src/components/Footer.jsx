@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 export default function Footer() {
+  const { t } = useTranslation("footer");
+
   return (
     <footer id="footer" className="footer">
       <div className="container">
@@ -12,22 +16,13 @@ export default function Footer() {
           }}
         >
           <div className="footer__content">
-            <h4 className="footer__title">Follow Me</h4>
+            <h4 className="footer__title">{t("followMe")}</h4>
             <ul className="footer__social-list">
               {[
                 { href: 'mailto:benzariyasaida@gmail.com', icon: 'fa-regular fa-envelope fa-beat-fade' },
-                {
-                  href: 'https://api.whatsapp.com/send?phone=713927838',
-                  icon: 'fa-brands fa-whatsapp fa-beat-fade',
-                },
-                {
-                  href: 'https://www.linkedin.com/in/saida-benzariya-915712269/',
-                  icon: 'fa-brands fa-linkedin-in fa-beat-fade',
-                },
-                {
-                  href: 'https://github.com/saida-ben',
-                  icon: 'fa-brands fa-github fa-fade',
-                },
+                { href: 'https://api.whatsapp.com/send?phone=713927838', icon: 'fa-brands fa-whatsapp fa-beat-fade' },
+                { href: 'https://www.linkedin.com/in/saida-benzariya-915712269/', icon: 'fa-brands fa-linkedin-in fa-beat-fade' },
+                { href: 'https://github.com/saida-ben', icon: 'fa-brands fa-github fa-fade' },
               ].map((item, i) => (
                 <li key={i} className="footer__social-item">
                   <a href={item.href} target="_blank" className="footer__social-link">
@@ -39,7 +34,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="footer__copyright">
-          &copy; 2025 Saida BENZARIYA. All Rights Reserved
+          &copy; 2025 Saida BENZARIYA. {t("allRights")}
         </p>
       </div>
     </footer>

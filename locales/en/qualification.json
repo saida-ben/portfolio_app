@@ -1,0 +1,33 @@
+{
+  "title": "Qualification",
+  "subtitle": "Experience & Education",
+  "experience": "Professional Experience",
+  "education": "Education",
+
+  "exp1_title": "Fullstack Developer Intern",
+  "exp1_company": "Lume Agency, France",
+  "exp1_desc": "Developed a web application to streamline the recruitment process, allowing recruiters to post job offers and manage applications, while candidates can submit their applications.",
+  "exp1_date": "April 2024 - June 2024",
+
+  "exp2_title": "Fullstack Developer Intern",
+  "exp2_company": "OCP - Safi",
+  "exp2_desc": "Developed a web application for real-time visualization of weather data for production adjustment.",
+  "exp2_date": "April 2023 - June 2023",
+
+  "exp3_title": "Fullstack Developer Intern",
+  "exp3_company": "Marjane Holding - Safi",
+  "exp3_desc": "Developed a web application for managing customer orders and inventory, improving operational efficiency and customer satisfaction.",
+  "exp3_date": "July 2022 - August 2022",
+
+  "edu1_title": "DUT in Computer Engineering",
+  "edu1_school": "EST - Cadi Ayyad University - Safi",
+  "edu1_date": "2021 - 2023",
+
+  "edu2_title": "Professional License in ISIR",
+  "edu2_school": "EST - Cadi Ayyad University - Safi",
+  "edu2_date": "2023 - 2024",
+
+  "edu3_title": "Master in Software Quality",
+  "edu3_school": "FSDM - Fez",
+  "edu3_date": "Completed in 2026"
+}

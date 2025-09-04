@@ -1,4 +1,9 @@
+import { useTranslation } from "react-i18next";
+
+
 export default function Services() {
+    const { t } = useTranslation("services");
+
   return (
     <section
       id="services"
@@ -15,7 +20,7 @@ export default function Services() {
             marginBottom: '32px',
           }}
         >
-          Technology Skills
+          {t("title")}
         </h2>
 
         <div
@@ -27,15 +32,15 @@ export default function Services() {
         >
           <ServiceCard
             icon={<img src="./img/JEE.png" alt="JEE" width={80} height={80} />}
-            title="Jakarta Enterprise Edition (JEE)"
-            text="Framework Spring / Spring Boot, JPA, Hibernate, Administration Tomcat, 3-tier Architecture, MVC2 Model, Servlets and JSP, DAO Pattern"
+            title={t("jee.title")}
+            text={t("jee.text")}
             iconColor="#4299e1"
           />
 
           <ServiceCard
             icon={<img src="./img/coding.png" alt="Web" width={80} height={80} />}
-            title="Ingénierie du Web"
-            text="HTML, CSS, JavaScript, Node.js, React"
+            title={t("web.title")}
+            text={t("web.text")}
             iconColor="#9f7aea"
             logos={[
               { src: "./img/nodejs.png", alt: "Power BI", width: 40, height: 40 },
@@ -48,8 +53,8 @@ export default function Services() {
 
           <ServiceCard
             icon={<img src="./img/devops.png" alt="DevOps" width={80} height={80} />}
-            title="Ingénierie DevOps"
-            text="Maven, Git, GitHub, GitLab, Jira, Jenkins, JUnit, Selenium"
+            title={t("devops.title")}
+            text={t("devops.text")}
             iconColor="#48bb78"
             logos={[
               { src: "./img/git.png", alt: "Power BI", width: 40, height: 40 },
@@ -61,15 +66,15 @@ export default function Services() {
 
           <ServiceCard
             icon={<img src="./img/XML.png" alt="XML" width={80} height={80} />}
-            title="Technologie XML"
-            text="Standard XML, Bases de données XML, Parseurs XML (DOM, SAX), DTD, XSD (XML Schema), XSLT, XPath, XQuery"
+            title={t("xml.title")}
+            text={t("xml.text")}            
             iconColor="#319795"
           />
 
           {/* BI avec logos */}
           <ServiceCard
             icon={<img src="./img/bi.png" alt="BI" width={80} height={80} />}
-            title="BI"
+            title={t("bi.title")}
             logos={[
               { src: "./img/powerbi.png", alt: "Power BI", width: 80, height: 80 },
               { src: "./img/talend.png", alt: "Talend", width: 80, height: 80 },
@@ -80,8 +85,8 @@ export default function Services() {
 
           <ServiceCard
             icon={<img src="./img/db.png" alt="DB" width={80} height={80} />}
-            title="DB | Data Formats"
-            text="MySQL, PostgreSQL | JSON, XML."
+            title={t("db.title")}
+            text={t("db.text")}
             iconColor="#ecc94b"
             logos={[
               { src: "./img/mysql.png", alt: "Power BI", width: 70, height: 70 },

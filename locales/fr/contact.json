@@ -1,0 +1,18 @@
+{
+  "contact": {
+    "title": "Intéressé à collaborer ? Parlons-en",
+    "description": "Prêt à travailler ensemble sur votre prochain projet logiciel ? J'aimerais avoir de vos nouvelles ! N'hésitez pas à me contacter via le formulaire ci-dessous.",
+    "btn":"Contactez-moi",
+    "form": {
+      "title": "Contactez-moi",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer"
+    },
+    "alerts": {
+      "success": "Merci {{name}} ! Votre message a été envoyé.",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    }
+  }
+}
