@@ -5,27 +5,39 @@
     "list": {
       "badsmell": {
         "title": "Chasseur de Bad Smells",
-        "desc": "Détection des Bad Smells et refactoring dans du code Java."
+        "desc": "Outil intelligent en Java pour la détection et la refactorisation des bad smells (duplication, violations de bonnes pratiques), contribuant à une amélioration notable de la maintenabilité, des performances et de la qualité logicielle dans des projets Java."
       },
       "recruitment": {
-        "title": "Plateforme de Recrutement",
-        "desc": "Développement d’une plateforme de gestion du recrutement."
+        "title": "Application de Recrutement",
+        "desc": "Plateforme de recrutement automatisant la gestion des candidatures et le tri des profils. Elle a permis de réduire significativement le temps de traitement des candidats et d’optimiser l’expérience des recruteurs."
       },
       "feedback": {
         "title": "Projet d’Analyse de Feedback",
-        "desc": "Projet d’analyse des feedbacks."
+        "desc": "Application web innovante permettant l’analyse comportementale des employés via des feedbacks anonymisés. Elle identifie les axes d’amélioration et génère des recommandations de formation personnalisées, contribuant à la montée en compétence des collaborateurs."
       },
       "covid": {
         "title": "Tableau de Bord COVID-19",
-        "desc": "Suivi épidémiologique du COVID-19 via un tableau de bord."
+        "desc": "Dashboard interactif destiné au suivi des indicateurs épidémiologiques du COVID-19. La solution intègre plusieurs sources de données et offre une visualisation claire, facilitant la prise de décision grâce à une vision globale et actualisée de la pandémie."
       },
       "children": {
         "title": "Gestion des Enfants",
-        "desc": "Application web pour la gestion des enfants, journaux quotidiens, rôles et utilisateurs."
+        "desc": "Plateforme digitale complète pour la gestion des dossiers de plus de 100 enfants au sein d’une association. Elle prend en charge l’enregistrement des données personnelles, le suivi quotidien des activités et la gestion des rôles et permissions, améliorant la traçabilité et l’efficacité."
       },
       "weather": {
-        "title": "Visualisation Météo en Temps Réel",
-        "desc": "Visualisation en temps réel des données météo pour ajustement de la production."
+        "title": "Surveillance Météorologique en Temps Réel",
+        "desc": "Application web de monitoring en temps réel des données météorologiques critiques (direction du vent, humidité, température). Elle permet aux équipes de production de prendre des décisions rapides et réduit les risques liés aux conditions atmosphériques."
+      }, 
+      "ests": {
+        "title": "Site Web de Pré-inscription – EST Safi",
+        "desc": "Site web multilingue permettant aux candidats d’effectuer leur pré-inscription en ligne. La solution digitalise l’ensemble du processus, garantissant accessibilité, gain de temps et une meilleure expérience utilisateur pour les étudiants et l’administration."
+      },
+      "offres": {
+        "title": "Tableau de Bord Analytique du Marché de l’Emploi",
+        "desc": "Dashboard interactif alimenté par une API de recrutement, analysant l’évolution des offres d’emploi, les types de contrats proposés, ainsi que les compétences, langues et formations les plus demandées, afin d’offrir une vision stratégique du marché de l’emploi."
+      },
+      "stock": {
+        "title": "Système de Gestion des Stocks",
+        "desc": "Application web robuste pour la gestion centralisée des stocks, produits, catégories et utilisateurs. Elle réduit les erreurs liées à la saisie manuelle et améliore la productivité des équipes."
       }
     },
     "viewProject": "Voir le projet",

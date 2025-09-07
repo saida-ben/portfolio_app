@@ -30,12 +30,19 @@ export default function Services() {
             gap: '32px',
           }}
         >
-          <ServiceCard
-            icon={<img src="./img/JEE.png" alt="JEE" width={80} height={80} />}
-            title={t("jee.title")}
-            text={t("jee.text")}
-            iconColor="#4299e1"
-          />
+        <ServiceCard
+          icon={<img src="./img/JEE.png" alt="JEE" width={80} height={80} />}
+          title={t("jee.title")}
+          text={t("jee.text")}
+          iconColor="#4299e1"
+          logos={[
+            { src: "./img/Java-logo-icon-1.png", alt: "Tomcat", width: 50, height: 50 },
+            { src: "./img/JEE.png", alt: "JPA", width: 50, height: 50 },
+            { src: "./img/spring.png", alt: "Spring", width: 60, height: 60 },
+            { src: "./img/spring-boot-project-logo.png", alt: "Spring Boot", width: 50, height: 50 },
+          ]}
+          
+        />
 
           <ServiceCard
             icon={<img src="./img/coding.png" alt="Web" width={80} height={80} />}
@@ -61,6 +68,8 @@ export default function Services() {
               { src: "./img/github.png", alt: "Talend", width: 40, height:40 },
               { src: "./img/maven.png", alt: "Pentaho", width: 40, height: 40 },
               { src: "./img/junit.png", alt: "Pentaho", width: 40, height: 40 },
+              { src: "./img/Atlassian-Logo-2010s1.png", alt: "jira", width: 40, height: 40 },
+              { src: "./img/gitlab_original_wordmark_logo_icon_146504.png", alt: "Gitlab", width: 40, height: 40 },
             ]}
           />
 
@@ -89,8 +98,11 @@ export default function Services() {
             text={t("db.text")}
             iconColor="#ecc94b"
             logos={[
-              { src: "./img/mysql.png", alt: "Power BI", width: 70, height: 70 },
-              { src: "./img/posql.png", alt: "Talend", width: 70, height: 70 },
+              { src: "./img/mysql.png", alt: "Power BI", width: 60, height: 60 },
+              { src: "./img/posql.png", alt: "Talend", width: 50, height: 50 },
+              { src: "./img/json.png", alt: "json", width: 50, height: 50 },
+              { src: "./img/XML.png", alt: "json", width: 50, height: 50 },
+              
             ]}
           />
         </div>
@@ -124,7 +136,7 @@ function ServiceCard({ icon, title, text, iconColor, logos = [] }) {
           fontSize: '20px',
           fontWeight: 600,
           textAlign: 'center',
-          marginBottom: '12px',
+          marginBottom: '24px',
           color: 'black',
         }}
       >
@@ -140,7 +152,7 @@ function ServiceCard({ icon, title, text, iconColor, logos = [] }) {
             justifyContent: 'center',
             alignItems: 'center',
             flexWrap: 'wrap',
-            marginTop: '12px',
+            marginTop: '20px',
           }}
         >
           {logos.map((lg, i) => (

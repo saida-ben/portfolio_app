@@ -1,31 +1,43 @@
 {
   "projects": {
     "title": "Projects",
-    "subtitle": "My recent work",
+    "subtitle": "My Recent Work",
     "list": {
       "badsmell": {
         "title": "Bad Smell Hunter",
-        "desc": "Detection of Bad Smells and Refactoring in Java Code."
+        "desc": "An intelligent Java tool for detecting and refactoring code smells (duplication, best practice violations), significantly improving maintainability, performance, and software quality in Java projects."
       },
       "recruitment": {
-        "title": "Recruitment Platform",
-        "desc": "Development of a Recruitment Management Platform."
+        "title": "Recruitment Application",
+        "desc": "A recruitment platform automating candidate management and profile screening. It reduced processing time significantly and optimized the recruiters’ experience."
       },
       "feedback": {
-        "title": "Feedback Analyzer Project",
-        "desc": "Feedback analyzer project."
+        "title": "Feedback Analysis Project",
+        "desc": "An innovative web application for employee behavioral analysis using anonymized feedback. It identifies areas for improvement and generates personalized training recommendations, fostering skills development."
       },
       "covid": {
         "title": "COVID-19 Dashboard",
-        "desc": "COVID-19 Epidemiological Monitoring via Dashboard."
+        "desc": "An interactive dashboard for monitoring COVID-19 epidemiological indicators. The solution integrates multiple data sources and provides clear visualizations, supporting decision-making with a global and up-to-date overview of the pandemic."
       },
       "children": {
-        "title": "Children Management",
-        "desc": "Web Application for Children Management, Daily Journals, Roles and Users."
+        "title": "Children Management System",
+        "desc": "A complete digital platform for managing records of over 100 children within an association. It handles personal data registration, daily activity tracking, and role/permission management, improving traceability and operational efficiency."
       },
       "weather": {
-        "title": "Real-Time Visualization of Weather",
-        "desc": "Real-Time Visualization of Weather Data for Production Adjustment."
+        "title": "Real-Time Meteorological Monitoring",
+        "desc": "A web application for real-time monitoring of critical meteorological data (wind direction, humidity, temperature). It enabled production teams to make fast decisions and reduced risks related to atmospheric conditions."
+      },
+      "ests": {
+        "title": "Pre-Registration Website – EST Safi",
+        "desc": "A multilingual website allowing candidates to complete online pre-registration. The solution digitalized the entire process, ensuring accessibility, time efficiency, and a better user experience for both students and administration."
+      },
+      "offres": {
+        "title": "Job Market Analytics Dashboard",
+        "desc": "An interactive dashboard powered by recruitment API data, analyzing job offer trends, contract types, as well as the most in-demand skills, languages, and training, providing strategic insights into the job market."
+      },
+      "stock": {
+        "title": "Stock Management System",
+        "desc": "A robust web application for centralized management of stock, products, categories, and users. It reduces errors from manual entry and enhances team productivity."
       }
     },
     "viewProject": "View Project",
