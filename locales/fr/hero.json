@@ -1,12 +1,18 @@
 {
   "greeting": "Salut, je suis Saida BENZARIYA",
   "roles": [
-    "Développeuse Frontend",
     "Ingénieure Logiciel",
     "Développeuse Full Stack",
-    "Résolveuse de problèmes créative"
+    "Résolveuse de Problèmes Créative",
+    "Membre Agile d'Équipe",
+    "Architecte d’Applications Web",
+    "Apprenante Passionnée",
+    "Passionnée de Données et de Logiciels",
+    "Esprit Innovant",
+    "Développeuse Front-to-Back",
+    "Ingénieure Collaborative"
   ],
-  "description": "Ingénieur en informatique avec une bonne expérience sur les architectures logicielles et les nouvelles technologies informatiques, notamment Jakarta EE, Spring Boot, React et Angular. Expérimentée dans la gestion de projets agiles, planification, exécution et coordination des tâches avec des équipes multifonctionnelles. Disposant des compétences requises en communication et en résolution de problèmes avec un esprit ouvert pour une collaboration efficace avec les parties prenantes et les membres de l'équipe.",
+  "description": "Ingénieure en informatique avec une solide expérience dans les architectures logicielles et les technologies modernes telles que Jakarta EE, Spring Boot, React et Angular. Expérimentée dans la gestion de projets agiles, la planification, l’exécution et la coordination des tâches avec des équipes pluridisciplinaires. Compétente en communication et en résolution de problèmes, avec un esprit ouvert favorisant une collaboration efficace avec les parties prenantes et les membres de l’équipe.",
   "resumeText": "Voir mon CV complet",
   "resumeBtn": "CV",
   "projectsCompleted": "Projets Réalisés",

@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
 import Qualification from './components/Qualification';
 import Services from './components/Services';
 import Projects from './components/Projects';
