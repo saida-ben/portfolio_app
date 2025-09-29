@@ -54,7 +54,7 @@ export default function Hero() {
 
             <div className="qualification__footer">
               <p className="qualification__footer-text">{t('resumeText')}</p>
-              <a href="public/img/cv.pdf" download className="btn btn--primary">
+              <a href="/img/cv.pdf" download className="btn btn--primary">
                 {t('resumeBtn')}
               </a>
             </div>
