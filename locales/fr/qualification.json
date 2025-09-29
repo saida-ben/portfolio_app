@@ -1,8 +1,9 @@
 {
   "title": "Qualification",
-  "subtitle": "Expérience & Formation",
+  "subtitle": "Expérience, Formation & Activités",
   "experience": "Expérience Professionnelle",
   "education": "Éducation",
+  "activities": "Activités",
 
   "exp1_title": "Stagiaire Développeuse Fullstack",
   "exp1_company": "Lume Agency, France",
@@ -29,5 +30,13 @@
 
   "edu3_title": "Master en Qualité Logicielle",
   "edu3_school": "FSDM - Fès",
-  "edu3_date": "Prévu en 2026"
+  "edu3_date": "Prévu en 2026",
+
+  "act1_title": "Participante à la Compétition Nationale – Injaz Al-Maghrib",
+  "act1_desc": "Proposition d’un projet innovant connectant les commerçants locaux aux utilisateurs. Développement de compétences en travail d’équipe, résolution de problèmes et gestion de projet.",
+  "act1_date": "Mars 2025 - Juin 2025",
+
+  "act2_title": "Participante à la Compétition Régionale – Injaz Al-Maghrib x Sotherma",
+  "act2_desc": "Conception d’une solution innovante répondant à un défi entrepreneurial. Renforcement des compétences en travail collaboratif, analyse critique et gestion de projet.",
+  "act2_date": "Février 2025"
 }

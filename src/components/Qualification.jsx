@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { GrCertificate } from "react-icons/gr";
 import { IoBusiness } from "react-icons/io5";
 import { BsCalendarDateFill } from "react-icons/bs";
+import { FaTrophy, FaMedal, FaAward } from "react-icons/fa"; // <-- ajout
 
 export default function Qualification() {
   const { t } = useTranslation("qualification");
@@ -56,6 +57,39 @@ export default function Qualification() {
           </div>
         </div>
 
+{/* Activities */}
+        <div className="qualification__wrapper">
+          <h3 className="qualification__name">
+            <FaTrophy className="nav__icon" color="black" /> {/* icône noire */}
+            {t("activities")}
+          </h3>
+
+          <div className="d-grid qualification__content">
+
+            <div className="qualification__item">
+              <div className="qualification__header">
+                <FaAward className="nav__icon"/>
+                <h3 className="qualification__title">{t("act1_title")}</h3>
+              </div>
+              <p className="qualification__description">{t("act1_desc")}</p>
+              <BsCalendarDateFill className="date__icon" />
+              <span className="qualification__date">{t("act1_date")}</span>
+            </div>
+
+            <div className="qualification__item">
+              <div className="qualification__header">
+                <FaAward className="nav__icon"/>
+                <h3 className="qualification__title">{t("act2_title")}</h3>
+              </div>
+              <p className="qualification__description">{t("act1_desc")}</p>
+              <BsCalendarDateFill className="date__icon" />
+              <span className="qualification__date">{t("act1_date")}</span>
+            </div>
+          </div>
+        </div>
+
+
+
         {/* Education */}
         <div className="qualification__wrapper">
           <h3 className="qualification__name">
@@ -94,6 +128,8 @@ export default function Qualification() {
             </div>
           </div>
         </div>
+
+
       </div>
     </section>
   );

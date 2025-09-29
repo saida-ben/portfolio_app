@@ -37,7 +37,7 @@ export default function Projects() {
 
   const projects = [
     {
-      img: './img/project_badsmell.png',
+      img: './img/prj-badsmells.png',
       link: 'https://github.com/saida-ben/BadSmellHunter',
       title: t("projects.list.badsmell.title"),
       desc: t("projects.list.badsmell.desc"),
@@ -45,7 +45,7 @@ export default function Projects() {
       techs: ['java', 'testing', 'git', 'github'],
     },
     {
-      img: './img/project_recruitment.png',
+      img: './img/Screenshot 2025-09-12 192435.png',
       link: 'https://github.com/saida-ben/recruitment-platform',
       title: t("projects.list.recruitment.title"),
       desc: t("projects.list.recruitment.desc"),
@@ -53,7 +53,7 @@ export default function Projects() {
       techs: ['nodejs', 'react', 'mysql', 'git', 'github'],
     },
     {
-      img: './img/project_feedback.png',
+      img: './img/sb_prj.png',
       link: 'https://github.com/saida-ben/Feedback_analyzer_project',
       title: t("projects.list.feedback.title"),
       desc: t("projects.list.feedback.desc"),

@@ -1,8 +1,9 @@
 {
   "title": "Qualification",
-  "subtitle": "Experience & Education",
+  "subtitle": "Experience & Education & Activities",
   "experience": "Professional Experience",
   "education": "Education",
+  "activities": "Activities",
 
   "exp1_title": "Fullstack Developer Intern",
   "exp1_company": "Lume Agency, France",
@@ -29,5 +30,13 @@
 
   "edu3_title": "Master in Software Quality",
   "edu3_school": "FSDM - Fez",
-  "edu3_date": "Completed in 2026"
+  "edu3_date": "Completed in 2026",
+
+  "act1_title": "Competition Participant – Injaz Al-Maghrib",
+  "act1_desc": "Proposed an innovative project connecting local merchants with users. Strengthened teamwork, problem-solving, and project management skills.",
+  "act1_date": "March 2025 - June 2025",
+
+  "act2_title": "Competition Participant – Injaz Al-Maghrib",
+  "act2_desc": "Designed an innovative solution addressing a business challenge. Enhanced teamwork, analytical thinking, and project management skills.",
+  "act2_date": "February 2025"
 }
