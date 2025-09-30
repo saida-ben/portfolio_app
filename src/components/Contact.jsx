@@ -42,7 +42,7 @@ export default function Contact() {
 
           <div className="contact__btn">
             <a
-              href="https://www.linkedin.com/in/shjz"
+              href="https://www.linkedin.com/in/saida-benzariya/"
               className="btn btn--primary"
               style={{
                 display: "inline-flex",
