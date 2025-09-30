@@ -21,7 +21,7 @@ export default function Footer() {
               {[
                 { href: 'mailto:benzariyasaida@gmail.com', icon: 'fa-regular fa-envelope fa-beat-fade' },
                 { href: 'https://api.whatsapp.com/send?phone=713927838', icon: 'fa-brands fa-whatsapp fa-beat-fade' },
-                { href: 'https://www.linkedin.com/in/saida-benzariya-915712269/', icon: 'fa-brands fa-linkedin-in fa-beat-fade' },
+                { href: 'https://www.linkedin.com/in/saida-benzariya/', icon: 'fa-brands fa-linkedin-in fa-beat-fade' },
                 { href: 'https://github.com/saida-ben', icon: 'fa-brands fa-github fa-fade' },
               ].map((item, i) => (
                 <li key={i} className="footer__social-item">
@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="footer__copyright">
-          &copy; 2025 Saida BENZARIYA. {t("allRights")}
+          &copy; 2025 Saida BENZARIYA. 
         </p>
       </div>
     </footer>
