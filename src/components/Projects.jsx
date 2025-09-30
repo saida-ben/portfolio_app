@@ -37,6 +37,14 @@ export default function Projects() {
 
   const projects = [
     {
+      img: './img/sb_prj.png',
+      link: 'https://github.com/saida-ben/feedback-analysis',
+      title: t("projects.list.feedback.title"),
+      desc: t("projects.list.feedback.desc"),
+      github: 'https://github.com/saida-ben/feedback-analysis',
+      techs: ['springboot', 'react', 'mysql', 'git', 'github'],
+    },
+    {
       img: './img/prj-badsmells.png',
       link: 'https://github.com/saida-ben/BadSmellHunter',
       title: t("projects.list.badsmell.title"),
@@ -45,20 +53,12 @@ export default function Projects() {
       techs: ['java', 'testing', 'git', 'github'],
     },
     {
-      img: './img/Screenshot 2025-09-12 192435.png',
+      img: './img/recrutement.png',
       link: 'https://github.com/saida-ben/recruitment-app',
       title: t("projects.list.recruitment.title"),
       desc: t("projects.list.recruitment.desc"),
       github: 'https://github.com/saida-ben/recruitment-app',
       techs: ['nodejs', 'react', 'mysql', 'git', 'github'],
-    },
-    {
-      img: './img/sb_prj.png',
-      link: 'https://github.com/saida-ben/feedback-analysis',
-      title: t("projects.list.feedback.title"),
-      desc: t("projects.list.feedback.desc"),
-      github: 'https://github.com/saida-ben/feedback-analysis',
-      techs: ['springboot', 'react', 'mysql', 'git', 'github'],
     },
     {
       img: './img/project7.png',
